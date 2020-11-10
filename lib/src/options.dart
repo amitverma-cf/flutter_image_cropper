@@ -17,7 +17,10 @@ enum CropAspectRatioPreset {
   ratio4x3,
   ratio5x4,
   ratio7x5,
-  ratio16x9
+  ratio16x9,
+  //
+  ratio3x4,
+  ratio9x16
 }
 
 ///
@@ -303,6 +306,11 @@ String aspectRatioPresetName(CropAspectRatioPreset preset) {
       return '7x5';
     case CropAspectRatioPreset.ratio16x9:
       return '16x9';
+    //
+    case CropAspectRatioPreset.ratio3x4:
+      return '3x4';
+    case CropAspectRatioPreset.ratio9x16:
+      return '9x16';
     default:
       return 'original';
   }
